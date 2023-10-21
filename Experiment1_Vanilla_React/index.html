@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--The div where the entire react application will be mounted, we can consider this as root of the application-->
+    <!-- To keep it simple its like the entry point where the react app is rendered or injected-->
+    <div id="root">
+      <!-- As you can see the below h1 tag is very mad at react because when react runs the render on the root,
+        it will replace all the stuff present inside the HTML and will replace it will the root component passed in the render, (See an example in App.js)-->
+      <h1>
+        Hello React, I am very mad at you because you will replace me once you
+        render the app in the root
+      </h1>
+    </div>
+
+    <!-- Just an experiment to mount another react application in the different root element-->
+    <div id="root2"></div>
+
+    <!-- The fun starts below -->
+    <!-- This is an example of react cdn where we can directly use react in a vanilla format without depending on npm or create react app package-->
+    <!-- Since react is a JS library this becomes feasibly to use it as a JS method or APIs provided by react-->
+    <!-- We need both react and react dom because react dom is responsible to manage the DOM operations for react, like render method and any other DOM manipulation operation-->
+
+    <!-- Production suggestion-->
+    <!-- Note: This is not a recommended way to use react in production for large web application -->
+    <!--       This can be useful in a micro-frontend architecture to develop a very small application with react capability-->
+
+    <!-- What the heck is crossorigin 🤔 -->
+    <!-- Crossorigin is nothing but an attribute of script tag which provides CORS policy to get the third party libraries from external resources-->
+    <!-- It provides a trust to the HTTP request that the source can be trusted and adds permission to fetch the data during HTTP handshake-->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+    ></script>
+
+    <script src="./App.js"></script>
+  </body>
+</html>
