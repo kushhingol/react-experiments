@@ -1,6 +1,6 @@
 # Let's learn together **React**
 
-**(Please Readme)** : The document might be looking very long and with alot of info to read but trust me when you start reading it you will enjoy it because you will be able to relate each and every word which you always feel while developing, i.e curious, confused and with a lot questions. Also I have tried to frame it in a very funny way because I believe that whatever we do we should do it with having a lot fun.
+**(Please Readme)** : The document might be looking very long and with a lot of info to read but trust me when you start reading it you will enjoy it because you will be able to relate each and every word which you always feel while developing, i.e curious, confused and with a lot questions. Also I have tried to frame it in a very funny way because I believe that whatever we do we should do it with having a lot fun.
 
 ## Lesson 1 (Vanilla React 🤔 🤨 🧐 😳 😭 🥲)
 
@@ -102,5 +102,10 @@ Here as you can see we create root and then passed the children into it. So now 
 # Let's go
 
 So that's all from the vanilla React experiment, I hope you enjoyed the article. For more examples please refer the `index.html` and `App.js` file, I have provided examples with explanation in the comment.
+
+** IMP NOTE **
+
+- This is not a recommended approach for using react. The main reason for this experiment is to try out different way which we can use react.
+- Adding CDN script for react is also not at all recommended for large scale application as it will increase the network operation as its costly. Its always better to download the package from npm (will cover this in the further experiments)
 
 Keep learning and Keep experimenting 😃 😬
